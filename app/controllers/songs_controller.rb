@@ -1,7 +1,7 @@
-# require 'rack-flash'
+require 'rack-flash'
 # enable :sessions
 class SongsController < ApplicationController
-  # use Rack::Flash
+  use Rack::Flash
   get '/songs' do
     erb :'songs/index'
   end
