@@ -30,6 +30,8 @@ class SongsController < ApplicationController
     erb :'songs/edit'
   end
 
-
+  patch '/songs/:slug' do
+    redirect to "/songs/#{@song.slug}"
+  end
 
 end
