@@ -3,7 +3,9 @@
   <input id="hidden" type="hidden" name="_method" value="patch">
   <br><label>Song Name:
     <input type="text" name="Name" id="song_name" value="<%=@song.name%>"></label></br>
-  <br></br><label>New Artist Name: <input type="text" name="Artist Name" id="new_song"></label></h1>
+  <br></br>
+
+  <label>Update Artist Name: <input type="text" name="Artist Name" id="artist_name"></label></h1>
   <% Genre.all.each do |genre| %>
   <% if genre.name %>
   <br><input id= "<%=genre.name%>" name="genres[]" value="<%=genre.id%>" type="checkbox"><%=genre.name %></input></br>
