@@ -27,7 +27,7 @@ class SongsController < ApplicationController
   end
 
   get '/songs/:slug/edit' do
-
+    erb :'songs/edit'
   end
 
 
