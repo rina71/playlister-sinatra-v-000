@@ -36,7 +36,7 @@ class SongsController < ApplicationController
     @song = Song.find_by_slug(params[:slug])
     @song.artist = Artist.find_or_create_by(:name => params["Artist Name"])
     if params[:genre_ids] == !@song.genre_ids
-    params[:owner][:pet_ids] = []
+        params[:genre_ids] = []
   end
     binding.pry
 
